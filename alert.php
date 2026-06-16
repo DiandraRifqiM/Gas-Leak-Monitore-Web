@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/alert.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <!-- Logo / Header -->
         <header>
             <i class='bx bxs-chip'></i>
-            <span>IoT Dashboard</span>
+            <span>Alert History</span>
         </header>
 
         <!-- Navigation -->
@@ -33,7 +33,7 @@
             <ul>
 
                 <li>
-                    <a href="index.php" class="active">
+                    <a href="index.php">
                         <i class='bx bx-grid-alt'></i>
                         <span>Dashboard</span>
                     </a>
@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="alert.php">
+                    <a href="alert.php" class="active">
                         <i class='bx bx-error-circle'></i>
                         <span>Alert</span>
                     </a>

@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/history.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <!-- Logo / Header -->
         <header>
             <i class='bx bxs-chip'></i>
-            <span>IoT Dashboard</span>
+            <span>Sensor History</span>
         </header>
 
         <!-- Navigation -->
@@ -33,14 +33,14 @@
             <ul>
 
                 <li>
-                    <a href="index.php" class="active">
+                    <a href="index.php">
                         <i class='bx bx-grid-alt'></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="history.php">
+                    <a href="history.php" class="active">
                         <i class='bx bx-history'></i>
                         <span>History</span>
                     </a>
@@ -65,10 +65,10 @@
     </aside>
     <main class="main-content">
 
-    <div class="page-header">
+    <!-- <div class="page-header">
         <h1>Sensor History</h1>
         <p>Gas monitoring data records</p>
-    </div>
+    </div> -->
 
 
     <div class="table-card">

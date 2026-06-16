@@ -63,7 +63,7 @@ temp,
 humid,
 created_at
 FROM dht11
-ORDER BY dht11_data_id DESC
+ORDER BY dht_data_id DESC
 LIMIT 50
 ");
 
