@@ -156,9 +156,12 @@ function loadData() {
 
       const status = document.getElementById("systemStatus");
 
-      if (Number(data.gas_val) > 70 || Number(data.air_val) > 70) {
+      if (Number(data.gas_val) > 80 || Number(data.air_val) > 80) {
         status.innerText = "DANGER";
         status.style.color = "#ef4444";
+      } else if (Number(data.gas_val) > 70 || Number(data.air_val) > 70) {
+        status.innerText = "WARNING";
+        status.style.color = "#FFB733";
       } else {
         status.innerText = "SAFE";
         status.style.color = "#10b981";

@@ -1,3 +1,7 @@
+<?php
+require_once 'auth/check_auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +29,7 @@
         <!-- Logo / Header -->
         <header>
             <i class='bx bxs-chip'></i>
-            <span>Sensor History</span>
+            <span>GLD System</span>
         </header>
 
         <!-- Navigation -->
@@ -65,10 +69,10 @@
     </aside>
     <main class="main-content">
 
-    <!-- <div class="page-header">
-        <h1>Sensor History</h1>
-        <p>Gas monitoring data records</p>
-    </div> -->
+    <div class="page-header">
+        <h1>History</h1>
+        <p>Sensors Data Records</p>
+    </div>
 
 
     <div class="table-card">

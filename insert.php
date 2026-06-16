@@ -24,6 +24,15 @@ if (isset($_POST['gas_val'])) {
 
     if ($conn->query($query) === TRUE) {
         echo "Data sent successfully!";
+
+        // MQ2 Alert
+        if($gas_value > 80){
+            $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
+            VALUES ('MQ2', '$gas_value', 'DANGER', 'Gas Leaked Detected!')");
+        }elseif($gas_value > 70){
+            $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
+            VALUES ('MQ2', '$gas_value', 'WARNING', 'High Gas Concentration!')");
+        }
     } else {
         echo "MQ135 Failed Send Data!!!" . $conn->error . "<br>";
     }
@@ -52,6 +61,15 @@ if(isset($_POST['air_val'])){
     $query3 = "INSERT INTO mq135 (air_val) VALUES ($air_val)";
     if($conn -> query($query3) === TRUE){
         echo "\nMQ135 Data Sent!";
+        
+        // MQ135 Alert
+        if($air_val > 80){
+            $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
+            VALUES ('MQ135', '$air_val', 'DANGER', 'Toxic Air Quality!')");
+        }elseif($air_val > 75){
+            $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
+            VALUES ('MQ135', '$air_val', 'WARNING', 'Air Quality Contaminated!')");
+        }
     }else{
         echo "\nMQ135 Failed Send Data!!!" . $conn->error;
     }

@@ -1,3 +1,7 @@
+<?php
+require_once 'auth/check_auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +29,7 @@
         <!-- Logo / Header -->
         <header>
             <i class='bx bxs-chip'></i>
-            <span>Alert History</span>
+            <span>GLD System</span>
         </header>
 
         <!-- Navigation -->
@@ -63,7 +67,67 @@
             </a>
         </div>
     </aside>
-</section>
+    <main class="main-content">
 
+    <div class="page-top">
+
+        <!-- <h1>Alert</h1> -->
+        <!-- <p>Alerts Data Records</p> -->
+        <div class="page-header">
+            <h1>History</h1>
+            <p>Sensors Data Records</p>
+        </div>
+
+            <div class="filter-wrapper">
+
+                <button id="filterBtn" class="filter-btn">
+                    <i class='bx bx-filter-alt'></i>
+                </button>
+
+                <div id="filterMenu" class="filter-menu">
+
+                    <button data-sensor="all">
+                        All Sensor
+                    </button>
+
+                    <button data-sensor="MQ2">
+                        MQ2
+                    </button>
+
+                    <button data-sensor="MQ135">
+                        MQ135
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="table-card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Time</th>
+                        <th>Sensor</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+
+                <tbody id="alertTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+    <script src="Assets/js/alert.js"></script>
+</section>
 </body>
 </html>

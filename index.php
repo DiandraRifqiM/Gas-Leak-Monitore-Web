@@ -1,3 +1,7 @@
+<?php
+require_once 'auth/check_auth.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +28,7 @@
 
         <header>
             <i class='bx bxs-chip'></i>
-            <span>IoT Dashboard</span>
+            <span>GLD System</span>
         </header>
 
         <nav class="sidebar-nav">
