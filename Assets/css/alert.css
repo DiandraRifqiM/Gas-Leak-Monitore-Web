@@ -591,6 +591,23 @@ ALERT TABLE
 }
 
 /* ======================
+   SCROLLBAR
+====================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 20px;
+}
+
+/* ======================
 RESPONSIVE
 ====================== */
 
