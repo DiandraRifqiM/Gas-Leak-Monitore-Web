@@ -66,7 +66,7 @@ if(isset($_POST['air_val'])){
         if($air_val > 80){
             $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
             VALUES ('MQ135', '$air_val', 'DANGER', 'Toxic Air Quality!')");
-        }elseif($air_val > 75){
+        }elseif($air_val > 70){
             $conn->query("INSERT INTO alert (sensor_name, sensor_data, status, message)
             VALUES ('MQ135', '$air_val', 'WARNING', 'Air Quality Contaminated!')");
         }

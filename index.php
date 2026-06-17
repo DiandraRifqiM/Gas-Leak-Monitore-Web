@@ -79,12 +79,12 @@ require_once 'auth/check_auth.php';
         <div class="sensor-cards">
 
             <div class="card">
-                <h3>MQ2 Gas</h3>
+                <h3>Gas Value</h3>
                 <h2 id="gasVal">--%</h2>
             </div>
 
             <div class="card">
-                <h3>MQ135 Air</h3>
+                <h3>Air Quality</h3>
                 <h2 id="airVal">--%</h2>
             </div>
 
